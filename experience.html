@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <style>
+    /*------------all------------------*/
+    @import url("https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+    * {
+      font-family: "Poppins", sans-serif;
+      /*font-family: "Zen Kurenaido", sans-serif;*/
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    /*first declaration*/
+    body {
+      /* height: 100vh; */
+      display: flex;
+      flex-direction: column;
+      background-image: url(Images/sunset1.jpeg);
+    }
+
+    .footer {
+      margin-top: auto;
+    }
+
+    .header {
+      background-color: rgb(86, 69, 247);
+    }
+
+    a {
+      text-decoration: none;
+      color: black;
+    }
+
+    .navigation {
+      height: 5vh;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+
+      color: brown;
+      background-color: rgb(253, 245, 230);
+    }
+
+    .navigation-container {
+      font-size: 20px;
+    }
+
+    .navigation:hover {
+      background-color: brown;
+      color: rgb(253, 245, 230);
+    }
+
+    .navigation-container:hover {
+      color: brown;
+      background-color: rgb(253, 245, 230);
+      cursor: pointer;
+
+      -moz-border-radius-topleft: 10px;
+      -moz-border-radius-topright: 10px;
+      -moz-border-radius-bottomright: 0px;
+      -moz-border-radius-bottomleft: 0px;
+      -webkit-border-radius: 10px 10px 0px 0px;
+      border-radius: 15px 15px 15px 15px;
+    }
+
+    .title-top {
+      background-color: brown;
+      font-size: 25px;
+      text-align: center;
+      color: whitesmoke;
+      position: relative;
+      left: 14.5vw;
+      width: 70vw;
+    }
+
+    .body-container {
+      display: flex;
+      /* flex-wrap: wrap; */
+      flex-direction: row;
+      /* height: 75vh; */
+      justify-content: center;
+    }
+
+    #body-container-item-first {
+      background-color: rgb(253, 245, 230);
+      color: rgb(147, 131, 115);
+    }
+
+    #experience {
+      padding-top: 10px;
+      padding-bottom: 20vh;
+      text-align: justify;
+    }
+
+    .experience-each {
+      padding: 10px;
+    }
+
+    #body-container-item-second {
+      color: rgb(253, 245, 230);
+      background-color: brown;
+    }
+
+    .footer {
+      height: 10vh;
+      /* background-color: purple; */
+    }
+
+    @media only screen and (max-width: 1000px) {
+      .header #header {
+        width: 100%;
+      }
+    }
+  </style>
+  <body>
+    <section class="header">
+      <img id="header" src="Images/header.png" style="margin:auto;display:block" height="100%" />
+    </section>
+    <section class="navigation">
+      <navigation class="navigation-container">
+        <a href="index.html">Home</a>
+      </navigation>
+      <navigation class="navigation-container">
+        <a href="about.html">Biodata</a>
+      </navigation>
+      <navigation class="navigation-container">
+        <a href="education.html">Education</a>
+      </navigation>
+      <navigation class="navigation-container">
+        <a href="experience.html">Experience</a>
+      </navigation>
+      <navigation class="navigation-container">
+        <a href="contact.html">Contact Me</a>
+      </navigation>
+      <navigation class="navigation-container">
+        <a href="aboutme.html">About Me</a>
+      </navigation>
+    </section>
+    <section class="title-top">
+      <h1>Experience</h1>
+    </section>
+    <section class="body-container">
+      <section
+        id="body-container-item-first"
+        class="body-container-item"
+        style="flex-basis: 40vw"
+      >
+        <div id="experience">
+          <br />
+          <div class="experience-each">
+            <p>
+              1. Being moderator for few program in UiTM Kedah such as Resume
+              Crafting Skill, International Event, MPPs event and few more.
+            </p>
+          </div>
+          <div class="experience-each">
+            <p>
+              2. Represent UiTM Kedah in UiTM Trilathon for a Public Speaking
+            </p>
+          </div>
+          <div class="experience-each">
+            <p>3. Being one of Secreteriat of Representative Students.</p>
+          </div>
+
+          <div class="experience-each">
+            <p>4. President of Peers Club</p>
+          </div>
+
+          <div class="experience-each">
+            <p>5. Nominated as Tokoh Kepimpinan</p>
+          </div>
+        </div>
+      </section>
+      <section
+        id="body-container-item-second"
+        class="body-container-item"
+        style="flex-basis: 30vw"
+      >
+        <img src="Images/achievement.jpeg" height="100%" width="100%" />
+      </section>
+    </section>
+    <section class="footer">
+      <img src="Images/footer.png" height="100%" width="100%" />
+    </section>
+  </body>
+</html>

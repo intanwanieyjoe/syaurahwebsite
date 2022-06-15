@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <style>
+    /*------------all------------------*/
+    @import url("https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+    * {
+      font-family: "Poppins", sans-serif;
+      /*font-family: "Zen Kurenaido", sans-serif;*/
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    /*first declaration*/
+    body {
+      /* height: 100vh; */
+      display: flex;
+      flex-direction: column;
+      background-image: url(Images/sunset1.jpeg);
+    }
+
+    .footer {
+      margin-top: auto;
+    }
+
+    .header {
+      background-color: rgb(86, 69, 247);
+    }
+
+    a {
+      text-decoration: none;
+      color: black;
+    }
+
+    .navigation {
+      height: 5vh;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+
+      color: brown;
+      background-color: rgb(253, 245, 230);
+    }
+
+    .navigation-container {
+      font-size: 20px;
+    }
+
+    .navigation:hover {
+      background-color: brown;
+      color: rgb(253, 245, 230);
+    }
+
+    .navigation-container:hover {
+      color: brown;
+      background-color: rgb(253, 245, 230);
+      cursor: pointer;
+
+      -moz-border-radius-topleft: 10px;
+      -moz-border-radius-topright: 10px;
+      -moz-border-radius-bottomright: 0px;
+      -moz-border-radius-bottomleft: 0px;
+      -webkit-border-radius: 10px 10px 0px 0px;
+      border-radius: 15px 15px 15px 15px;
+    }
+
+    .title-top {
+      /* background-color: brown; */
+      font-size: 25px;
+      /* text-align: center; */
+      color: whitesmoke;
+      /* position: relative; */
+      padding: 20px;
+    }
+
+    .body-container {
+      display: flex;
+      /* flex-wrap: wrap; */
+      flex-direction: row;
+      height: 99vh;
+      justify-content: center;
+      background-color: rgb(253, 245, 230);
+    }
+
+    #body-container-item-first {
+      color: brown;
+      border: 1px brown solid;
+    }
+
+    #body-container-item-second {
+      color: brown;
+      border: 1px brown solid;
+    }
+
+    .body-container-column {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .body-item-column {
+      border: 1px brown solid;
+      height: 33vh;
+    }
+
+    .item-of-content img {
+      height: 25vh;
+      width: 20vw;
+    }
+
+    .footer {
+      height: 10vh;
+      /* background-color: purple; */
+    }
+
+    @media only screen and (max-width: 1000px) {
+      .header #header {
+        width: 100%;
+      }
+    }
+  </style>
+  <body>
+    <section class="header">
+      <img
+        id="header"
+        src="Images/header.png"
+        height="100%"
+        style="margin: auto; display: block"
+      />
+    </section>
+    <section class="navigation">
+      <navigation class="navigation-container">
+        <a href="index.html">Home</a>
+      </navigation>
+      <navigation class="navigation-container">
+        <a href="about.html">Biodata</a>
+      </navigation>
+      <navigation class="navigation-container">
+        <a href="education.html">Education</a>
+      </navigation>
+      <navigation class="navigation-container">
+        <a href="experience.html">Experience</a>
+      </navigation>
+      <navigation class="navigation-container">
+        <a href="contact.html">Contact Me</a>
+      </navigation>
+      <navigation class="navigation-container">
+        <a href="aboutme.html">About Me</a>
+      </navigation>
+    </section>
+    <section class="title-top">
+      <center><h1>My education journey</h1></center>
+    </section>
+    <section class="body-container">
+      <!-- <iframe
+        src="Images/RESUME SYAURAH.pdf"
+        style="width: 100%; height: 100%; border: none"
+      ></iframe> -->
+      <section
+        id="body-container-item-first"
+        class="body-container-item"
+        style="flex-basis: 90vw; flex-grow: 4"
+      >
+        <section class="body-container-column">
+          <section class="body-item-column">
+            <div class="item-of-content">
+              <center><h3>2022 - Current(Degree)</h3></center>
+              <center><h4>Bachelor of Information Science (Hons) Record Management </h4></center>
+              <center><img src="Images/uitm pundana.jpg" alt="" /></center>
+            </div>
+          </section>
+          <section class="body-item-column">
+            <div class="item-of-content">
+              <center><h3>2019-2021(Diploma)</h3></center>
+              <center><h4>Diploma in Information Management</h4></center>
+              <center><img src="Images/uitm merbok.jpg" alt="" /></center>
+            </div>
+          </section>
+          <section class="body-item-column">
+            <div class="item-of-content">
+              <center><h3>2014-2018(SPM)</h3></center>
+              <center><h4>SMK St. Bernadettes Convent Batu Gajah</h4></center>
+              <center><img src="Images/CONVENT.jpg" alt="" /></center>
+            </div>
+          </section>
+        </section>
+      </section>
+      <section
+        id="body-container-item-second"
+        class="body-container-item"
+        style="flex-basis: 10vw; flex-grow: 1"
+      ></section>
+    </section>
+    <section class="footer">
+      <img src="Images/footer.png" height="100%" width="100%" />
+    </section>
+  </body>
+</html>
